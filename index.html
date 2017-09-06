@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Vue File Uploader</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://unpkg.com/vue-material@0.7.1/dist/vue-material.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="app">
+  <md-toolbar>
+    <h1 class="md-title">Vue Image App</h1>
+  </md-toolbar>
+    <img class="original" :src="image" />
+  <div class="button-wrapper">
+  <label class="custom-file-upload">
+      <input type='file' @change="onFileChange"/>
+      Choose File
+  </label>
+  <md-button class="md-raised md-primary" @click.native="addFilter">filter</md-button>
+  </div>
+  <div class="wrapper">
+  <canvas-filter 
+     ref="canvas" 
+     :image="image" 
+     v-for="(obj, index) in filters" 
+     :filter="obj.filter" 
+     :name="obj.name" 
+     :key="obj.id">
+  </canvas-filter>
+  </md-card>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.js'></script>
+<script src='https://unpkg.com/vue-material@0.7.1'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

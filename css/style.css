@@ -1,0 +1,66 @@
+
+
+img {
+  width: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  min-width: 88px;
+  min-height: 36px;
+  margin: 6px 8px;
+  padding: 0 16px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 2px 2px rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12);
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+button {
+  display: inline-block;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.original {
+  margin-top: 50px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 3;
+  justify-content: center;
+}
+
+.md-card.md-theme-default.md-with-hover {
+  margin: 10px;
+  cursor: auto;
+}
+
+p {
+  text-align: center;
+}
